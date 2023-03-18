@@ -1,5 +1,5 @@
 # MOUT Fighting Positions
 
-Tandem freefall and parachute landing with a tethered cargo bundle for precise delivery of supplies and equipment with a HALO insertion.
+Get in the right positions to take the right shots.
 
-Steam Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=2482773252
+Steam Workshop 
