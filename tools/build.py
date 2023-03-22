@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""MFP Debug Build"""
+"""AUP Debug Build"""
 
 import os
 import sys
@@ -8,7 +8,7 @@ import subprocess
 
 ######## GLOBALS #########
 MAINPREFIX = "z"
-PREFIX = "mfp_"
+PREFIX = "aup_"
 ##########################
 
 def try_hemtt_build(projectpath):
@@ -54,7 +54,7 @@ def check_for_obsolete_pbos(addonspath, file):
 def main(): # pylint: disable=missing-function-docstring
     print("""
   ####################
-  # MFP Debug Build #
+  # AUP Debug Build #
   ####################
 """)
 

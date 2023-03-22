@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [_aircraft, _unit, [_cargo]] call mfp_main_fnc_tandemJump;
+ * [_aircraft, _unit, [_cargo]] call aup_main_fnc_tandemJump;
  *
  * Public: No
  */
@@ -139,5 +139,5 @@ switch (_cargoMode) do {
     }, true] call CBA_fnc_addPlayerEventHandler];
 
 }, [_unit, _aircraft, _cargo], 1 ,{
-    diag_log "mfp_main_fnc_tandemJump timed out waiting for _unloadSucess";
+    diag_log "aup_main_fnc_tandemJump timed out waiting for _unloadSucess";
 }] call CBA_fnc_waitUntilAndExecute;

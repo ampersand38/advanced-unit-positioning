@@ -9,19 +9,10 @@ class CfgPatches {
         requiredAddons[] = {"cba_main"};
         author = "Ampersand";
         authors[] = {"Ampersand"};
-        authorUrl = "https://github.com/ampersand38/mout-fighting-positions";
+        authorUrl = "https://github.com/ampersand38/advanced-unit-positioning";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEventHandlers.hpp"
-
-class CfgVehicles {
-    class StaticBase;
-    class mfp_leanOut: StaticBase {
-        author = "Ampersand";
-        _generalMacro = mfp_leanOut;
-        scope = 1;
-        gunnerAction = "";
-    };
-};
+#include "CfgVehicles.hpp"

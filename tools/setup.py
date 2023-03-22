@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #######################
-#  MFP Setup Script  #
+#  AUP Setup Script  #
 #######################
 
 import os
@@ -13,26 +13,26 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "z"
-PROJECTDIR = "mfp"
+PROJECTDIR = "aup"
 ##########################
 
 def main():
     FULLDIR = "{}\\{}".format(MAINDIR,PROJECTDIR)
     print("""
   ######################################
-  # MFP Development Environment Setup #
+  # AUP Development Environment Setup #
   ######################################
 
-  This script will create your MFP dev environment for you.
+  This script will create your AUP dev environment for you.
 
   Before you run this, you should already have:
     - A properly setup ACE3 Development Environment
 
   If you have not done those things yet, please abort this script in the next step and do so first.
 
-  This script will create two hard links on your system, both pointing to your MFP project folder:
-    [Arma 3 installation directory]\\{} => MFP project folder
-    P:\\{}                              => MFP project folder
+  This script will create two hard links on your system, both pointing to your AUP project folder:
+    [Arma 3 installation directory]\\{} => AUP project folder
+    P:\\{}                              => AUP project folder
     """.format(FULLDIR,FULLDIR))
     print("\n")
 

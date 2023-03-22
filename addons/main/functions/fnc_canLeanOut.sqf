@@ -10,7 +10,7 @@
  * Success <BOOLEAN>
  *
  * Example:
- * [_unit] call mfp_main_fnc_canLeanOut;
+ * [_unit] call aup_main_fnc_canLeanOut;
  *
  * Public: No
  */

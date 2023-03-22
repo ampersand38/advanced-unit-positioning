@@ -10,11 +10,11 @@
  * Nothing
  *
  * Example:
- * [player] call mfp_main_fnc_leanOut
+ * [player] call aup_main_fnc_leanOut
  *
  * Public: No
  */
 
 params ["_unit"];
 
-private _helper = "mfp_leanOut" createVehicle [0, 0, 0];
+private _helper = "aup_leanOut" createVehicle [0, 0, 0];

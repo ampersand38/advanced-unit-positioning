@@ -11,7 +11,7 @@
  * Actions <ARRAY>
  *
  * Example:
- * [_vehicle, _unit] call mfp_main_fnc_getTandemChildrenActions;
+ * [_vehicle, _unit] call aup_main_fnc_getTandemChildrenActions;
  *
  * Public: No
  */

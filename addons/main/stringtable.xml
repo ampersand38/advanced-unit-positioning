@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="MFP">
+<Project name="AUP">
 	<Package name="Main">
-        <Key ID="STR_MFP_Main_TandemJump">
+        <Key ID="STR_AUP_Main_TandemJump">
             <English>Tandem Jump</Original>
         </Key>
-        <Key ID="STR_MFP_Main_cutLoweringLine">
+        <Key ID="STR_AUP_Main_cutLoweringLine">
             <English>Cut Lowering Line</Original>
         </Key>
 	</Package>

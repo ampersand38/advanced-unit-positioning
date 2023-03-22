@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_unit] call mfp_main_fnc_stopLeanOut;
+ * [_unit] call aup_main_fnc_stopLeanOut;
  *
  * Public: No
  */

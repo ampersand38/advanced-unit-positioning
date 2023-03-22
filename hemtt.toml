@@ -1,5 +1,5 @@
-name = "MOUT Fighting Positions"
-prefix = "mfp"
+name = "Advanced Unit Positioning"
+prefix = "aup"
 author = "Ampersand"
 files = [
     "mod.cpp",
@@ -14,7 +14,7 @@ key_name = "{{prefix}}_{{version}}"
 authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
 
 releasebuild = [
-    "@zip mfp_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
+    "@zip aup_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
 ]
 
 [header_exts]
