@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Ampersand
- * Checks if given unit can cut its lowering line
+ * Checks if given unit can lean out
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -10,11 +10,11 @@
  * Success <BOOLEAN>
  *
  * Example:
- * [_unit] call mfp_main_fnc_canCutLoweringLine;
+ * [_unit] call mfp_main_fnc_canLeanOut;
  *
  * Public: No
  */
 
 params ["_unit"];
 
-!isNull (_unit getVariable [QGVAR(loweringLine), objNull])
+isWeaponDeployed [_unit, false];

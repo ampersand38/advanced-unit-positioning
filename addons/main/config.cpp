@@ -22,5 +22,6 @@ class CfgVehicles {
         author = "Ampersand";
         _generalMacro = mfp_leanOut;
         scope = 1;
+        gunnerAction = "";
     };
 };

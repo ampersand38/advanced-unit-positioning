@@ -11,12 +11,12 @@
  * Actions <ARRAY>
  *
  * Example:
- * [_vehicle, _player] call mfp_main_fnc_getTandemChildrenActions;
+ * [_vehicle, _unit] call mfp_main_fnc_getTandemChildrenActions;
  *
  * Public: No
  */
 
-params ["_vehicle", "_player"];
+params ["_vehicle", "_unit"];
 
 private _CargoObjectVIV = getVehicleCargo _vehicle;
 private _CargoObjectACE = _vehicle getVariable ["ace_cargo_loaded", []];

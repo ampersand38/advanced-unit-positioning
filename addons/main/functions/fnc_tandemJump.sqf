@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [_aircraft, _player, [_cargo]] call mfp_main_fnc_tandemJump;
+ * [_aircraft, _unit, [_cargo]] call mfp_main_fnc_tandemJump;
  *
  * Public: No
  */

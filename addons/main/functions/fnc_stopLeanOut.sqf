@@ -4,18 +4,17 @@
  * Checks if given unit can tandem jump with cargo in the aircraft
  *
  * Arguments:
- * 0: Aircraft <OBJECT>
- * 1: Player <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
- * Actions <ARRAY>
+ * None
  *
  * Example:
- * [_aircraft, _player] call mfp_main_fnc_canTandemJump;
+ * [_unit] call mfp_main_fnc_stopLeanOut;
  *
  * Public: No
  */
 
-params ["_aircraft", "_player"];
+params ["_unit"];
 
-true
+private _helper = _unit getVariable [QGVAR(helper)];
