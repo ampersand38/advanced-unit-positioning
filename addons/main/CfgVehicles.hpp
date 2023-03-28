@@ -4,6 +4,7 @@ class CfgVehicles
     class StaticWeapon: LandVehicle
     {
         class CargoTurret;
+        class EventHandlers;
         class Turrets;
     };
 
@@ -26,6 +27,9 @@ class CfgVehicles
         soundAttenuationCargo[] = {0};
         showNVGCargo[] = {1};
 
+        class EventHandlers: EventHandlers {
+            getOut = "_this call FUNC(handleGetOut)";
+        };
         class Turrets {};
         class UserActions {};
     }; // aup_cargo_base
@@ -80,27 +84,13 @@ class CfgVehicles
         {
             class CargoTurret: CargoTurret
             {
-                gunnerAction = "vehicle_turnout_1";
-                gunnerInAction = "vehicle_turnout_1";
+                gunnerAction = "passenger_flatground_4_vehicle_passenger_stand_1";
+                gunnerInAction = "passenger_flatground_4_vehicle_passenger_stand_1";
                 gunnerName = "Leaning";
 				animationSourceElevation = "Lean";
             };
         }; // Turrets
     }; // aup_leanOut
-    class aup_leanOut2: aup_leanOut
-    {
-        _generalMacro = "aup_leanOut2";
-
-        class Turrets: Turrets
-        {
-            class CargoTurret: CargoTurret
-            {
-                gunnerAction = "passenger_flatground_4_vehicle_passenger_stand_1";
-                gunnerInAction = "passenger_flatground_4_vehicle_passenger_stand_1";
-            };
-        }; // Turrets
-    }; // aup_leanOut2
-
 
     class aup_sit_1: aup_cargoTurret_base
     {
