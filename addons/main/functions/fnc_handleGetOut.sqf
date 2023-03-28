@@ -1,16 +1,16 @@
 #include "script_component.hpp"
 /*
  * Author: Ampersand
- * Checks if given unit can tandem jump with cargo in the aircraft
+ * Deletes the helper vehicle
  *
  * Arguments:
- * 0: Player <OBJECT>
+ * 0: Vehicle <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_unit] call aup_main_fnc_handleGetOut;
+ * [_vehicle] call aup_main_fnc_handleGetOut;
  *
  * Public: No
  */

@@ -2,4 +2,4 @@
 
 if (!hasInterface) exitWith {};
 
-addUserActionEventHandler ["AdjustUp", "Activate", {call FUNC(inputStopMove)}];
+addUserActionEventHandler ["AdjustUp", "Activate", {call FUNC(leanOut)}];

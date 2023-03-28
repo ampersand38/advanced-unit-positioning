@@ -27,9 +27,6 @@ class CfgVehicles
         soundAttenuationCargo[] = {0};
         showNVGCargo[] = {1};
 
-        class EventHandlers: EventHandlers {
-            getOut = "_this call FUNC(handleGetOut)";
-        };
         class Turrets {};
         class UserActions {};
     }; // aup_cargo_base
