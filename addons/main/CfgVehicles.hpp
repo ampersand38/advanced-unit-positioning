@@ -26,6 +26,7 @@ class CfgVehicles
     	memoryPointsGetInCargoPrecise[] = {"pos cargo"};
         soundAttenuationCargo[] = {0};
         showNVGCargo[] = {1};
+        extCameraPosition[] = {0, 0.300000, -3.500000};	// man
 
         class Turrets {};
         class UserActions {};
@@ -46,6 +47,15 @@ class CfgVehicles
         scope = 1;
         model = QPATHTOF(data\cargoTurret.p3d);
 
+        class AnimationSources
+        {
+            class Up {
+                source = "user";
+        		animPeriod = 1;
+        		initPhase = 0;
+            };
+            class Fw: Up {};
+        };
         class Turrets: Turrets
         {
             class CargoTurret: CargoTurret

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Ampersand
- * Checks if given unit can tandem jump with cargo in the aircraft
+ * Returns the position of the weapon deployment pivot of the player's weapon.
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -17,7 +17,7 @@
 
 private _player = call CBA_fnc_currentUnit;
 
-_w = currentWeapon _player;
+_w = primaryWeapon _player;
 //update weapon info upon weapon switch
 if (_w != _player getVariable ["aup_lastWeapon", "?"]) then {
     _cfg = configFile >> "CfgWeapons" >> _w;
@@ -42,6 +42,4 @@ _pos = selectionPosition [_player, _proxy, 0];
 _vx = _vy vectorCrossProduct _vz;
 
 _mat = matrixTranspose [_vx, _vy, _vz];
-_pos = _pos vectorAdd flatten(_mat matrixMultiply _offset);
-
-_player modelToWorldVisualWorld _pos;
+_pos vectorAdd flatten(_mat matrixMultiply _offset)

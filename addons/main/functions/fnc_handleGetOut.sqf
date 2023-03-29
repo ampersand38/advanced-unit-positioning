@@ -15,6 +15,9 @@
  * Public: No
  */
 
-params ["_vehicle"];
+params ["_vehicle", "_role", "_unit", "_turret"];
 
 deleteVehicle _vehicle;
+if (lifeState _unit != "INCAPACITATED") then {
+    _unit switchMove "";
+};
