@@ -15,9 +15,12 @@
  * Public: No
  */
 
+#define FALL_THRESHOLD 0.8
+
 params ["_vehicle", "_role", "_unit", "_turret"];
 
-deleteVehicle _vehicle;
 if (lifeState _unit != "INCAPACITATED") then {
     _unit switchMove "";
 };
+
+deleteVehicle _vehicle;
